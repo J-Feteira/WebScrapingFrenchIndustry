@@ -239,21 +239,3 @@ class Session:
             return phone_number
         except NoSuchElementException:
             return ""
-
-## add linkedin / social medias
-
-        
-    
-#    def _save_html_page(self) -> None:
-#        """Save current page as a html file."""
-#        try:
-#            number_file += 1
-#        except NameError:
-#            number_file = 1
-#        soup = BS(self.nav_chrome.page_source, "html.parser")
-#        path = os.path.abspath(os.getcwd())
-#        path_folder = os.path.join(path, "Companies")
-#        if not os.path.exists(path_folder):
-#           os.mkdir(path_folder)
-#       with open(path_folder + "/" + f"entreprise_{number_file}", "w", encoding="utf8") as filename:
-#           filename.write(str(soup))
